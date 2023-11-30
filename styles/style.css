@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #800080;
+}
+
+.price{
+    font-weight: bolder;
+    color: #724e27;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+body{
+    
+    background-color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+p{
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 20px;
+    color: black;
+}
+
+.ofer-3 ul li{
+    font-size: 1.1rem;
+    color:#392714;
+    list-style-type: none;
+    margin-bottom: 0.8rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+/*HEADER*/
+header{
+    height: 15vh;
+    background-color: rgba(128, 0, 128, 0.7);
+}
+
+/*menu*/
+.navigation{
+    margin-bottom: 20px;
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right:0px;
+    width: 20vw;
+}
+
+.menu{
+    display: inline-block;
+
+}
+
+.menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a001a;
+    margin-left: 2.5vw;
+}
+
+.menu a:visited{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #800080;
+}
+
+/*KOLUMNY*/
+
+.col{
+    display:flex;
+    flex-direction: row;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.col-s{
+    flex: 0 0 30%;
+}
+
+.col-l{
+    flex: 0 0 70%;
+}
+
+
+.ofer-3{
+    border: 1px solid #cc00cc;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 15%;
+}
+
+.ofer-3:hover{
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+.col-2{
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 40%;
+}
+
+
+.fa-solid{
+    padding-right: 5px;
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-xmark{
+    color: red;
+}
+
+.hot{
+     border: 3px solid #cc00cc;
+     
+}
+
+.listing-badges{
+    position: relative;
+    
+}
+.hot .listing-badges span{
+    position: absolute;
+    background-color: #cc00cc;
+    top: 7px;
+   left: -35px;
+   width: 100px;
+   rotate: -45deg;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+
+.ofer-3 a{
+    color: #ffe6ff;
+    display: block;
+    text-align: center;
+    margin-top:  1.5rem;
+    text-decoration: none;
+    background-color: #cc00cc;
+    padding: 11px 20px;
+    border-radius: 27px;
+    justify-self: center;
+}
+
+

@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 img{
     max-width: 100%;
 }
@@ -14,6 +20,7 @@ img{
     margin-top: 20px;
     padding: 10px;
     height: 200px;
+    width: 100%;
     background-image: url("img/intro-img.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -21,6 +28,10 @@ img{
 }
 
 /*znaczki*/
+.fa-solid{
+    margin-right: 5px;
+}
+
 .fa-xmark{
     color: red;
 }
@@ -35,7 +46,8 @@ img{
     justify-content: center;
     align-items: center;
     top: 10px;
-    height: auto;
+    height: 120px;
+    width: 100%;
     background-color: black;
     box-shadow: 0 4px 5px silver;
 }
@@ -64,9 +76,10 @@ img{
 /*up button*/
 
 #button-up{
-    position: fixed;
-    right: 10px;
-    bottom: 5px;
+    align-self: flex-start;
+    position: sticky;
+    top: 10px;
+    left: 5px;
 }
 
 .fa-circle-up{
@@ -75,6 +88,8 @@ img{
 
 /*kontenery*/
 .container{
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,13 +102,15 @@ img{
 .content{
     display: flex;
     flex-direction: column;
+    margin: 5px;
+    padding: 0 10px;
+    align-items: center;
     justify-content: center;
 }
  
 .col{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 20px 0;
 }
 
@@ -120,7 +137,7 @@ img{
     overflow: hidden;
     text-align: center;
     border: 2px solid #000080;
-    padding: 10px;
+    padding: 40px;
     border-radius: 5px;
 }
 
@@ -152,8 +169,8 @@ img{
 
 .listing-badges span{
     position: absolute;
-    left: -50px;
-    top: 15px;
+    left: -75px;
+    top: -17px;
     transform: rotate(-45deg);
     background-color: #6600cc;
     font-size: 1.1rem;
@@ -217,10 +234,16 @@ img{
 
 
 
+.adress-bottom p{
+    color: white;
+    font-size: 0.8rem;
+}
 
 
-
-
+.copyright span{
+    color: antiquewhite;
+    font-size: 1rem;
+}
 
 
 @media(min-width: 768px){
@@ -251,7 +274,7 @@ img{
 
 
         .col-2{
-            flex: 0 0 40%;
+            flex: 0 0 50%;
         }
 
         .listing-badges span{
@@ -276,9 +299,8 @@ img{
     #navbar{
         position: sticky;
         width: 100%;
-        height: 35px;
+        height: 30px;
         text-transform: uppercase;
-        justify-content: end;
         box-shadow: none;
         background-color: rgba(0, 0, 0, 0);
     }
@@ -289,11 +311,13 @@ img{
         flex-flow: row wrap;
         justify-content: end;
         width: auto;
+        height: 30px;
         
     }
 
     .menu-links ul{
         flex-direction: row;
+        padding: 0;
         justify-content: space-evenly;
     }
 
